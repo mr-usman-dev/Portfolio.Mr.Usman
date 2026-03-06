@@ -1,0 +1,1250 @@
+﻿<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Professional Graphic Designer portfolio specializing in Adobe Photoshop, Illustrator, visual branding, social media design, and premium creative solutions." />
+  <meta name="keywords"
+    content="Graphic Designer, Branding, Adobe Photoshop, Adobe Illustrator, Portfolio, Logo Design" />
+  <meta name="author" content="Mr. Usman" />
+  <title>Mr. Usman | Graphic Designer Portfolio</title>
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('portfolio-theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const activeTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', activeTheme);
+    })();
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&family=Sacramento&display=swap"
+    rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      corePlugins: {
+        preflight: false
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="preload-active">
+  <div class="site-preloader" id="sitePreloader" role="status" aria-live="polite" aria-label="Loading portfolio">
+    <div class="preloader-stage">
+      <div class="preloader-frame-wrap" aria-hidden="true"><svg class="preloader-frame-svg" viewBox="0 0 1240 540"
+          preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="preloaderTrace" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#f5f8ff" />
+              <stop offset="55%" stop-color="#cfd7e6" />
+              <stop offset="100%" stop-color="#aab5c8" />
+            </linearGradient>
+          </defs>
+          <rect class="preloader-frame-guide" x="40" y="40" width="1160" height="460" />
+          <rect class="preloader-frame-trace" x="40" y="40" width="1160" height="460" pathLength="3240" />
+        </svg><span class="preloader-handle handle-tl"></span><span class="preloader-handle handle-tr"></span><span
+          class="preloader-handle handle-bl"></span><span class="preloader-handle handle-br"></span><span
+          class="preloader-handle handle-tm"></span><span class="preloader-handle handle-bm"></span><span
+          class="preloader-cursor"></span>
+        <div class="preloader-copy">
+          <p class="preloader-type-small mb-0">Graphic Design</p>
+          <h2 class="preloader-type-large mb-0">Portfolio</h2>
+        </div>
+        <div class="preloader-signature-end" aria-hidden="true"><img class="preloader-signature-img"
+            src="signature-usman.png" alt="" loading="eager" decoding="async"></div>
+      </div>
+      <p class="preloader-note mb-0">Preparing Creative Showcase...</p><span class="visually-hidden">Loading graphic
+        design portfolio intro animation.</span>
+    </div>
+  </div><noscript>
+    <style>
+      .site-preloader {
+        display: none !important;
+      }
+
+      body.preload-active {
+        overflow: auto !important;
+      }
+
+      body.preload-active>* {
+        visibility: visible !important;
+      }
+    </style>
+  </noscript>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <header class="site-header fixed-top" id="home">
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+      <div class="container"><a class="navbar-brand brand-logo brand-logo-nav me-lg-4" href="#home"
+          aria-label="mr.usman signature logo"><img class="brand-signature" src="signature-usman.png" alt=""
+            loading="lazy" decoding="async"></a>
+        <ul class="brand-inline-nav centered-brand-nav d-none d-lg-flex align-items-center gap-3 mb-0">
+          <li><a class="brand-inline-link smooth-link" href="#about">About</a></li>
+          <li><a class="brand-inline-link smooth-link" href="#services">Services</a></li>
+          <li><a class="brand-inline-link smooth-link" href="#process">Process</a></li>
+          <li><a class="brand-inline-link smooth-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="brand-inline-link smooth-link" href="#certificates">Certificates</a></li>
+          <li><a class="brand-inline-link smooth-link" href="#workflow">Workflow</a></li>
+          <li><a class="brand-inline-link smooth-link" href="#testimonials">Testimonials</a></li>
+          <li><a class="brand-inline-link smooth-link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="header-quick-actions d-flex align-items-center ms-auto ms-lg-0 order-lg-3 gap-2"><button
+            class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><i
+              class="bi bi-moon-stars-fill theme-icon theme-icon-moon" aria-hidden="true"></i><i
+              class="bi bi-sun-fill theme-icon theme-icon-sun" aria-hidden="true"></i><span
+              class="theme-toggle-text">Theme</span></button></div><button class="navbar-toggler ms-2 order-lg-4"
+          type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav"
+          aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse order-lg-2 mt-3 mt-lg-0 d-lg-none" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#process">Process</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+            <li class="nav-item"><a class="nav-link" href="#workflow">Workflow</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-section d-flex align-items-center" aria-label="Hero">
+      <div class="hero-noise" aria-hidden="true"></div>
+      <div class="hero-grid-lines" aria-hidden="true"></div>
+      <div class="hero-orb orb-one" aria-hidden="true"></div>
+      <div class="hero-orb orb-two" aria-hidden="true"></div>
+      <div class="hero-orb orb-three" aria-hidden="true"></div>
+      <div class="container-fluid hero-container position-relative">
+        <div class="hero-shell">
+          <div class="row align-items-center gx-xl-4 gy-4">
+            <div class="col-lg-6 reveal">
+              <div class="hero-copy">
+                <p class="hero-tag mb-3">Freelance Graphic Designer � Brand Identity � Campaign Visuals</p>
+                <div class="hero-proof-strip mb-4" aria-label="Creative strengths"><span><i class="bi bi-stars"
+                      aria-hidden="true"></i>Premium-first design</span><span><i class="bi bi-lightning-charge"
+                      aria-hidden="true"></i>Fast communication</span><span><i class="bi bi-patch-check"
+                      aria-hidden="true"></i>Brand-ready delivery</span></div>
+                <h1 class="hero-title mb-4">I turn ordinary brands into premium-looking visual systems.</h1>
+                <p class="hero-subtitle mb-4">
+                  I design logos, social creatives, ad visuals, and polished brand assets that help businesses look
+                  credible, modern, and ready to win trust at first glance.
+                </p>
+                <div class="hero-actions d-flex flex-wrap gap-3"><a href="#contact"
+                    class="btn btn-accent rounded-pill px-4 py-2 smooth-link">Hire Me</a><a href="#portfolio"
+                    class="btn btn-outline-light rounded-pill px-4 py-2 smooth-link">View Portfolio</a><button
+                    class="btn btn-cv rounded-pill px-3 py-2" type="button" data-bs-toggle="modal"
+                    data-bs-target="#cvModal"><i class="bi bi-download me-2" aria-hidden="true"></i>Download CV
+                  </button></div>
+                <ul class="hero-metrics list-unstyled d-flex flex-wrap gap-2 mt-4 mb-0" aria-label="Key achievements">
+                  <li><strong>140+</strong><span>Creative Projects</span></li>
+                  <li><strong>7+ Years</strong><span>Design Experience</span></li>
+                  <li><strong>48h</strong><span>Concept Delivery</span></li>
+                </ul>
+                <div class="hero-social mt-4">
+                  <p class="hero-social-title mb-2">Connect Directly</p>
+                  <div class="hero-social-links d-flex flex-wrap gap-2"><a
+                      href="https://www.facebook.com/Mr.UsmanJutt91" target="_blank" rel="noopener noreferrer"
+                      aria-label="Facebook"><i class="bi bi-facebook"></i></a><a
+                      href="https://www.instagram.com/usmanjuttttt/" target="_blank" rel="noopener noreferrer"
+                      aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="https://wa.me/923106565892"
+                      target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
+                        class="bi bi-whatsapp"></i></a><a href="mailto:usmanfarooq9293@gmail.com" aria-label="Email"><i
+                        class="bi bi-envelope-fill"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 reveal">
+              <div class="hero-stage mx-auto">
+                <div class="hero-stage-glow" aria-hidden="true"></div>
+                <div class="hero-stage-card hero-stage-main">
+                  <div class="hero-stage-status"><span class="hero-stage-dot" aria-hidden="true"></span>
+                    Available for selected freelance projects
+                  </div>
+                  <div class="hero-stage-photo"><img src="Profile Photo 03.png" alt="Portrait of Mr. Usman" /></div>
+                  <div class="hero-stage-caption">
+                    <p class="hero-stage-name mb-1">Mr. Usman</p>
+                    <p class="hero-stage-role mb-1">Senior Graphic Designer</p><span>Visual Branding Specialist</span>
+                  </div>
+                </div>
+                <article class="hero-stage-card hero-stage-side hero-stage-side-top">
+                  <p class="hero-stage-label mb-2">Current Focus</p>
+                  <ul class="hero-stage-list mb-0">
+                    <li>Luxury brand identities</li>
+                    <li>Social campaign systems</li>
+                    <li>Print and packaging assets</li>
+                  </ul>
+                </article>
+                <article class="hero-stage-card hero-stage-side hero-stage-side-bottom">
+                  <p class="hero-stage-label mb-2">Core Tools</p>
+                  <div class="hero-stage-tools">
+                    <span>Photoshop</span><span>Illustrator</span><span>Lightroom</span><span>Canva</span>
+                  </div>
+                </article>
+                <div class="hero-stage-pill hero-stage-pill-top" aria-hidden="true">Booked for April 2026</div>
+                <div class="hero-stage-pill hero-stage-pill-bottom" aria-hidden="true">Premium Visual Identity</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="section-space about-section">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-5 reveal">
+            <div class="about-profile-card">
+              <div class="about-avatar-stage mx-auto">
+                <div class="about-icon-cloud" aria-hidden="true"><span class="about-float-icon"
+                    style="--x:-172px; --y:-128px; --dx:12px; --dy:9px; --dur:7.8s; --delay:-1.3s; --r1:9deg; --r2:-8deg;"><img
+                      class="about-float-glyph"
+                      src="https://api.iconify.design/simple-icons:adobephotoshop.svg?color=%2331A8FF" alt=""
+                      loading="lazy" decoding="async" /></span><span class="about-float-icon"
+                    style="--x:-26px; --y:-206px; --dx:10px; --dy:13px; --dur:8.4s; --delay:-2.4s; --r1:-8deg; --r2:11deg;"><img
+                      class="about-float-glyph"
+                      src="https://api.iconify.design/simple-icons:adobeillustrator.svg?color=%23FF9A00" alt=""
+                      loading="lazy" decoding="async" /></span><span class="about-float-icon"
+                    style="--x:126px; --y:-180px; --dx:14px; --dy:10px; --dur:7.2s; --delay:-0.7s; --r1:10deg; --r2:-9deg;"><img
+                      class="about-float-glyph"
+                      src="https://api.iconify.design/simple-icons:adobeindesign.svg?color=%23FF3366" alt=""
+                      loading="lazy" decoding="async" /></span><span class="about-float-icon"
+                    style="--x:198px; --y:-64px; --dx:9px; --dy:14px; --dur:8.9s; --delay:-2.9s; --r1:-10deg; --r2:8deg;"><img
+                      class="about-float-glyph"
+                      src="https://api.iconify.design/simple-icons:adobelightroom.svg?color=%2331A8FF" alt=""
+                      loading="lazy" decoding="async" /></span><span class="about-float-icon"
+                    style="--x:182px; --y:92px; --dx:13px; --dy:10px; --dur:7.6s; --delay:-1.9s; --r1:8deg; --r2:-11deg;"><img
+                      class="about-float-glyph"
+                      src="https://api.iconify.design/simple-icons:adobexd.svg?color=%23FF61F6" alt="" loading="lazy"
+                      decoding="async" /></span><span class="about-float-icon"
+                    style="--x:96px; --y:188px; --dx:11px; --dy:9px; --dur:8.2s; --delay:-0.4s; --r1:-9deg; --r2:12deg;"><img
+                      class="about-float-glyph" src="https://api.iconify.design/simple-icons:figma.svg?color=%23F24E1E"
+                      alt="" loading="lazy" decoding="async" /></span><span class="about-float-icon"
+                    style="--x:-42px; --y:210px; --dx:10px; --dy:11px; --dur:8.7s; --delay:-2.1s; --r1:11deg; --r2:-8deg;"><img
+                      class="about-float-glyph" src="https://api.iconify.design/simple-icons:canva.svg?color=%2300C4CC"
+                      alt="" loading="lazy" decoding="async" /></span><span class="about-float-icon"
+                    style="--x:-170px; --y:162px; --dx:12px; --dy:10px; --dur:7.9s; --delay:-1.1s; --r1:-7deg; --r2:10deg;"><img
+                      class="about-float-glyph"
+                      src="https://api.iconify.design/simple-icons:coreldraw.svg?color=%2346A141" alt="" loading="lazy"
+                      decoding="async" /></span><span class="about-float-icon"
+                    style="--x:-214px; --y:24px; --dx:9px; --dy:12px; --dur:8.5s; --delay:-3.2s; --r1:9deg; --r2:-9deg;"><img
+                      class="about-float-glyph"
+                      src="https://api.iconify.design/simple-icons:affinitydesigner.svg?color=%231B72BE" alt=""
+                      loading="lazy" decoding="async" /></span><span class="about-float-icon"
+                    style="--x:-208px; --y:-72px; --dx:14px; --dy:9px; --dur:7.3s; --delay:-2.6s; --r1:-11deg; --r2:9deg;"><img
+                      class="about-float-glyph"
+                      src="https://api.iconify.design/simple-icons:affinityphoto.svg?color=%237E4DD2" alt=""
+                      loading="lazy" decoding="async" /></span></div>
+                <div class="about-avatar-wrap"><img src="Profile Photo 02.jpg"
+                    alt="Profile photo of Mr. Usman, graphic designer" class="about-avatar" /></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 reveal">
+            <p class="section-kicker">About Me</p>
+            <h2 class="section-title">Creative Partner for Brands That Want to Look Premium</h2>
+            <p class="section-text">
+              I help startups, agencies, and growing businesses build bold visual identities that look modern, trusted,
+              and market-ready. Every design is crafted with strategy, not just style, so your brand speaks clearly and
+              confidently.
+            </p>
+            <p class="section-text">
+              My workflow combines Adobe Photoshop and Adobe Illustrator expertise with brand storytelling, resulting in
+              polished assets that improve engagement and make a stronger first impression with clients.
+            </p>
+            <div class="about-contact-grid mt-4" aria-label="Contact details">
+              <article class="about-contact-item about-contact-intro">
+                <p class="about-contact-name mb-1">Mr. Usman</p>
+                <p class="about-contact-title mb-0">Senior Graphic Designer &amp; Visual Branding Specialist</p>
+              </article>
+              <article class="about-contact-item">
+                <p class="about-contact-label mb-1"><i class="bi bi-envelope-fill" aria-hidden="true"></i>Email</p><a
+                  href="mailto:usmanfarooq9293@gmail.com">usmanfarooq9293@gmail.com</a>
+              </article>
+              <article class="about-contact-item">
+                <p class="about-contact-label mb-1"><i class="bi bi-telephone-fill" aria-hidden="true"></i>Contact
+                  Number</p><a href="tel:+923106565892">+92 (310) 6565-892</a>
+              </article>
+              <article class="about-contact-item about-contact-item-address">
+                <p class="about-contact-label mb-1"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>Address</p>
+                <span class="about-contact-address">People's Colony, Mumtazabad, Multan, Pakistan</span>
+              </article>
+              <article class="about-contact-item">
+                <p class="about-contact-label mb-1"><i class="bi bi-calendar2-week-fill" aria-hidden="true"></i>Age</p>
+                <span>24 Years</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="section-space services-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center reveal">
+            <p class="section-kicker">Services</p>
+            <h2 class="section-title">Creative Services for Modern Brands</h2>
+            <p class="section-text mx-auto">Complete design solutions to help you impress clients, stand out in your
+              market, and launch with confidence.</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="service-card h-100" data-service-key="logo-brand-identity">
+              <div class="service-icon"><i class="bi bi-vector-pen"></i></div>
+              <h3>Logo &amp; Brand Identity</h3>
+              <p>Strategic logo systems and full identity toolkits that strengthen brand recall.</p><button
+                class="service-details-btn service-card-trigger" type="button"
+                aria-label="View complete process for Logo and Brand Identity">View Details <i
+                  class="bi bi-arrow-right-short" aria-hidden="true"></i></button>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="service-card h-100" data-service-key="photoshop-retouching">
+              <div class="service-icon"><i class="bi bi-image"></i></div>
+              <h3>Photoshop Editing &amp; Retouching</h3>
+              <p>Advanced photo editing, compositing, and retouching for campaign-ready visuals.</p><button
+                class="service-details-btn service-card-trigger" type="button"
+                aria-label="View complete process for Photoshop Editing and Retouching">View Details <i
+                  class="bi bi-arrow-right-short" aria-hidden="true"></i></button>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="service-card h-100" data-service-key="illustrator-vector-art">
+              <div class="service-icon"><i class="bi bi-bezier2"></i></div>
+              <h3>Illustrator Vector Art</h3>
+              <p>Scalable vector illustrations, icons, and shape systems with crisp precision.</p><button
+                class="service-details-btn service-card-trigger" type="button"
+                aria-label="View complete process for Illustrator Vector Art">View Details <i
+                  class="bi bi-arrow-right-short" aria-hidden="true"></i></button>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="service-card h-100" data-service-key="social-media-design">
+              <div class="service-icon"><i class="bi bi-phone"></i></div>
+              <h3>Social Media Design</h3>
+              <p>High-performing social creatives optimized for reach, engagement, and consistency.</p><button
+                class="service-details-btn service-card-trigger" type="button"
+                aria-label="View complete process for Social Media Design">View Details <i
+                  class="bi bi-arrow-right-short" aria-hidden="true"></i></button>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="service-card h-100" data-service-key="print-design">
+              <div class="service-icon"><i class="bi bi-printer"></i></div>
+              <h3>Print Design (Flyers, Posters, Business Cards)</h3>
+              <p>Print-ready layouts with professional typography, composition, and production setup.</p><button
+                class="service-details-btn service-card-trigger" type="button"
+                aria-label="View complete process for Print Design">View Details <i class="bi bi-arrow-right-short"
+                  aria-hidden="true"></i></button>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="service-card h-100" data-service-key="web-ui-graphics">
+              <div class="service-icon"><i class="bi bi-window-stack"></i></div>
+              <h3>Web &amp; UI Graphics</h3>
+              <p>Pixel-perfect banners, landing visuals, and interface graphics for digital products.</p><button
+                class="service-details-btn service-card-trigger" type="button"
+                aria-label="View complete process for Web and UI Graphics">View Details <i
+                  class="bi bi-arrow-right-short" aria-hidden="true"></i></button>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="service-card h-100" data-service-key="packaging-label-design">
+              <div class="service-icon"><i class="bi bi-box-seam"></i></div>
+              <h3>Packaging &amp; Label Design</h3>
+              <p>Premium packaging systems that increase shelf appeal and brand recognition.</p><button
+                class="service-details-btn service-card-trigger" type="button"
+                aria-label="View complete process for Packaging and Label Design">View Details <i
+                  class="bi bi-arrow-right-short" aria-hidden="true"></i></button>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="service-card h-100" data-service-key="pitch-deck-presentation-design">
+              <div class="service-icon"><i class="bi bi-easel2"></i></div>
+              <h3>Pitch Deck &amp; Presentation Design</h3>
+              <p>Investor and sales presentations with clear structure and persuasive visuals.</p><button
+                class="service-details-btn service-card-trigger" type="button"
+                aria-label="View complete process for Pitch Deck and Presentation Design">View Details <i
+                  class="bi bi-arrow-right-short" aria-hidden="true"></i></button>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="service-card h-100" data-service-key="motion-graphics-ads-reels">
+              <div class="service-icon"><i class="bi bi-play-btn"></i></div>
+              <h3>Motion Graphics for Ads &amp; Reels</h3>
+              <p>Eye-catching animated creatives for social media campaigns and digital ads.</p><button
+                class="service-details-btn service-card-trigger" type="button"
+                aria-label="View complete process for Motion Graphics for Ads and Reels">View Details <i
+                  class="bi bi-arrow-right-short" aria-hidden="true"></i></button>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="service-card h-100" data-service-key="brand-strategy-visual-direction">
+              <div class="service-icon"><i class="bi bi-diagram-3"></i></div>
+              <h3>Brand Strategy &amp; Visual Direction</h3>
+              <p>Positioning-led visual direction to align your brand with business goals.</p><button
+                class="service-details-btn service-card-trigger" type="button"
+                aria-label="View complete process for Brand Strategy and Visual Direction">View Details <i
+                  class="bi bi-arrow-right-short" aria-hidden="true"></i></button>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="service-card h-100" data-service-key="infographic-data-visual-design">
+              <div class="service-icon"><i class="bi bi-bar-chart-line"></i></div>
+              <h3>Infographic &amp; Data Visual Design</h3>
+              <p>Data-driven visuals that simplify complex information and improve retention.</p><button
+                class="service-details-btn service-card-trigger" type="button"
+                aria-label="View complete process for Infographic and Data Visual Design">View Details <i
+                  class="bi bi-arrow-right-short" aria-hidden="true"></i></button>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="process" class="section-space process-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center reveal">
+            <p class="section-kicker">Design Process</p>
+            <h2 class="section-title">How Every Project Moves from Idea to Impact</h2>
+          </div>
+        </div>
+        <div class="process-flow-shell reveal" aria-label="Design workflow"><span class="process-flow-track"
+            aria-hidden="true"></span>
+          <ol class="process-flow-list">
+            <li class="process-flow-item"><span class="process-flow-node">01</span>
+              <article class="process-flow-content">
+                <h3>Discover</h3>
+                <p>Understand brand goals, audience insights, and business direction.</p>
+              </article>
+            </li>
+            <li class="process-flow-item"><span class="process-flow-node">02</span>
+              <article class="process-flow-content">
+                <h3>Concept</h3>
+                <p>Build creative routes, visual references, and strategic design angles.</p>
+              </article>
+            </li>
+            <li class="process-flow-item"><span class="process-flow-node">03</span>
+              <article class="process-flow-content">
+                <h3>Design</h3>
+                <p>Execute polished assets with strong hierarchy and brand consistency.</p>
+              </article>
+            </li>
+            <li class="process-flow-item"><span class="process-flow-node">04</span>
+              <article class="process-flow-content">
+                <h3>Revise</h3>
+                <p>Refine details through focused feedback rounds and quality checks.</p>
+              </article>
+            </li>
+            <li class="process-flow-item"><span class="process-flow-node">05</span>
+              <article class="process-flow-content">
+                <h3>Deliver</h3>
+                <p>Finalize production-ready files, exports, and clear handoff structure.</p>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio" class="section-space portfolio-section">
+      <div class="container">
+        <div class="row justify-content-center mb-4">
+          <div class="col-lg-9 text-center reveal">
+            <p class="section-kicker">Portfolio</p>
+            <h2 class="section-title">Advanced Case Studies &amp; Performance-Driven Creative Work</h2>
+            <p class="section-text mx-auto">Browse filtered case studies with project scope, tools used, timeline, and
+              outcomes to evaluate design quality at a glance.</p>
+          </div>
+        </div>
+        <div class="portfolio-toolbar reveal mb-4">
+          <div class="portfolio-filters d-flex flex-wrap gap-2" role="group" aria-label="Portfolio filters"><button
+              class="btn filter-btn active" data-filter="all" type="button">All</button><button class="btn filter-btn"
+              data-filter="logos" type="button">Logos</button><button class="btn filter-btn" data-filter="branding"
+              type="button">Branding</button><button class="btn filter-btn" data-filter="social" type="button">Social
+              Media</button><button class="btn filter-btn" data-filter="print" type="button">Print</button><button
+              class="btn filter-btn" data-filter="photo" type="button">Photo Editing</button></div>
+          <div class="portfolio-tools d-flex flex-wrap align-items-center gap-2"><select id="portfolioSort"
+              class="form-select portfolio-sort" aria-label="Sort portfolio">
+              <option value="newest">Sort: Newest</option>
+              <option value="oldest">Sort: Oldest</option>
+              <option value="az">Sort: A-Z</option>
+            </select><span class="portfolio-result-badge" id="portfolioResults" aria-live="polite">8 Projects
+              Found</span></div>
+        </div>
+        <div class="row g-4 portfolio-stream" id="portfolioGrid">
+          <div class="col-sm-6 col-xl-4 portfolio-item reveal" data-category="logos branding" data-year="2026"
+            data-keywords="luxury fashion logo identity monogram packaging premium brand system">
+            <article class="portfolio-card" data-project="atelier-noir-identity"
+              data-image="https://images.unsplash.com/photo-1636633762833-5d1658f1e29b?auto=format&fit=crop&w=1200&q=80"
+              data-title="Atelier Noir Monogram Identity"
+              data-description="Designed a premium identity system for a fashion label including monogram, packaging direction, and launch-ready brand assets."
+              data-category-label="Logos / Branding" data-client="Atelier Noir"
+              data-tools="Illustrator, Photoshop, InDesign" data-delivery="13 Days">
+              <div class="portfolio-media"><img
+                  src="https://images.unsplash.com/photo-1636633762833-5d1658f1e29b?auto=format&fit=crop&w=900&q=80"
+                  alt="Luxury brand stationery and identity presentation" />
+                <div class="portfolio-overlay"><span>Logos + Branding</span>
+                  <h3>Atelier Noir Identity</h3>
+                </div>
+              </div>
+              <div class="portfolio-body">
+                <div class="portfolio-meta"><span><i class="bi bi-building"></i> Atelier Noir</span><span><i
+                      class="bi bi-calendar3"></i> 2026</span></div>
+                <p>Designed a premium identity system for a fashion label including monogram, packaging direction, and
+                  launch-ready brand assets.</p>
+                <div class="portfolio-tags"><span>Monogram</span><span>Packaging</span><span>Brand Rules</span></div>
+                <button class="btn btn-outline-dark rounded-pill btn-sm portfolio-open" type="button">View
+                  Gallery</button>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-xl-4 portfolio-item reveal" data-category="branding print" data-year="2025"
+            data-keywords="corporate brand manual stationery investor templates brand guidelines executive identity">
+            <article class="portfolio-card" data-project="northline-brand-manual"
+              data-image="https://images.unsplash.com/photo-1456324463128-7ff6903988d8?auto=format&fit=crop&w=1200&q=80"
+              data-title="Northline Corporate Brand Manual"
+              data-description="Built a corporate brand manual with executive stationery, investor-facing templates, and usage standards for a cleaner enterprise image."
+              data-category-label="Branding / Print" data-client="Northline Consulting"
+              data-tools="InDesign, Illustrator" data-delivery="9 Days">
+              <div class="portfolio-media"><img
+                  src="https://images.unsplash.com/photo-1456324463128-7ff6903988d8?auto=format&fit=crop&w=900&q=80"
+                  alt="Corporate planning and brand manual concept boards" />
+                <div class="portfolio-overlay"><span>Branding + Print</span>
+                  <h3>Northline Brand Manual</h3>
+                </div>
+              </div>
+              <div class="portfolio-body">
+                <div class="portfolio-meta"><span><i class="bi bi-building"></i> Northline</span><span><i
+                      class="bi bi-calendar3"></i> 2025</span></div>
+                <p>Built a corporate brand manual with executive stationery, investor-facing templates, and usage
+                  standards for a cleaner enterprise image.</p>
+                <div class="portfolio-tags"><span>Brand Manual</span><span>Stationery</span><span>Templates</span></div>
+                <button class="btn btn-outline-dark rounded-pill btn-sm portfolio-open" type="button">View
+                  Gallery</button>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-xl-4 portfolio-item reveal" data-category="social" data-year="2026"
+            data-keywords="social media fashion campaign reels stories feed ads mobile launch">
+            <article class="portfolio-card" data-project="veloura-social-launch"
+              data-image="https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=1200&q=80"
+              data-title="Veloura Social Launch Campaign"
+              data-description="Created a fashion-forward launch campaign with feed posts, stories, reels covers, and promotional ad variations."
+              data-category-label="Social Media" data-client="Veloura Studio"
+              data-tools="Photoshop, Illustrator, After Effects" data-delivery="7 Days">
+              <div class="portfolio-media"><img
+                  src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=900&q=80"
+                  alt="Social campaign layout and mobile creative preview" />
+                <div class="portfolio-overlay"><span>Social Media</span>
+                  <h3>Veloura Launch Campaign</h3>
+                </div>
+              </div>
+              <div class="portfolio-body">
+                <div class="portfolio-meta"><span><i class="bi bi-building"></i> Veloura</span><span><i
+                      class="bi bi-calendar3"></i> 2026</span></div>
+                <p>Created a fashion-forward launch campaign with feed posts, stories, reels covers, and promotional ad
+                  variations.</p>
+                <div class="portfolio-tags"><span>Feed System</span><span>Story Set</span><span>Reel Covers</span></div>
+                <button class="btn btn-outline-dark rounded-pill btn-sm portfolio-open" type="button">View
+                  Gallery</button>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-xl-4 portfolio-item reveal" data-category="print" data-year="2025"
+            data-keywords="expo print posters flyers brochure standees event graphics collateral">
+            <article class="portfolio-card" data-project="summit-expo-print"
+              data-image="https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?auto=format&fit=crop&w=1200&q=80"
+              data-title="Summit Expo Print Experience"
+              data-description="Designed a unified expo print system covering posters, flyers, roll-up stands, and handout layouts for on-ground events."
+              data-category-label="Print Design" data-client="Summit Expo" data-tools="InDesign, Photoshop"
+              data-delivery="8 Days">
+              <div class="portfolio-media"><img
+                  src="https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?auto=format&fit=crop&w=900&q=80"
+                  alt="Print collateral with poster, brochure, and flyer layouts" />
+                <div class="portfolio-overlay"><span>Print Design</span>
+                  <h3>Summit Expo Print Set</h3>
+                </div>
+              </div>
+              <div class="portfolio-body">
+                <div class="portfolio-meta"><span><i class="bi bi-building"></i> Summit Expo</span><span><i
+                      class="bi bi-calendar3"></i> 2025</span></div>
+                <p>Designed a unified expo print system covering posters, flyers, roll-up stands, and handout layouts
+                  for on-ground events.</p>
+                <div class="portfolio-tags"><span>Posters</span><span>Brochures</span><span>Event Print</span></div>
+                <button class="btn btn-outline-dark rounded-pill btn-sm portfolio-open" type="button">View
+                  Gallery</button>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-xl-4 portfolio-item reveal" data-category="photo" data-year="2025"
+            data-keywords="beauty retouch portrait skin cleanup color correction commercial photoshop lightroom">
+            <article class="portfolio-card" data-project="lumiere-retouch-series"
+              data-image="https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?auto=format&fit=crop&w=1200&q=80"
+              data-title="Lumiere Beauty Retouch Series"
+              data-description="Refined portrait assets for beauty campaigns using high-end skin retouching, color cleanup, and realistic finish control."
+              data-category-label="Photo Editing" data-client="Lumiere Beauty" data-tools="Photoshop, Lightroom"
+              data-delivery="5 Days">
+              <div class="portfolio-media"><img
+                  src="https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?auto=format&fit=crop&w=900&q=80"
+                  alt="Beauty portrait retouch sample for commercial campaign" />
+                <div class="portfolio-overlay"><span>Photo Editing</span>
+                  <h3>Lumiere Retouch Series</h3>
+                </div>
+              </div>
+              <div class="portfolio-body">
+                <div class="portfolio-meta"><span><i class="bi bi-building"></i> Lumiere</span><span><i
+                      class="bi bi-calendar3"></i> 2025</span></div>
+                <p>Refined portrait assets for beauty campaigns using high-end skin retouching, color cleanup, and
+                  realistic finish control.</p>
+                <div class="portfolio-tags"><span>Skin Retouch</span><span>Color Grade</span><span>Portraits</span>
+                </div><button class="btn btn-outline-dark rounded-pill btn-sm portfolio-open" type="button">View
+                  Gallery</button>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-xl-4 portfolio-item reveal" data-category="logos branding" data-year="2024"
+            data-keywords="restaurant rebrand menu identity packaging hospitality premium logo system">
+            <article class="portfolio-card" data-project="saffron-table-rebrand"
+              data-image="https://images.unsplash.com/photo-1452802447250-470a88ac82bc?auto=format&fit=crop&w=1200&q=80"
+              data-title="Saffron Table Rebrand System"
+              data-description="Rebuilt a restaurant brand with new logo directions, menu styling, packaging accents, and interior-ready visual language."
+              data-category-label="Logos / Branding" data-client="Saffron Table" data-tools="Illustrator, Photoshop"
+              data-delivery="14 Days">
+              <div class="portfolio-media"><img
+                  src="https://images.unsplash.com/photo-1452802447250-470a88ac82bc?auto=format&fit=crop&w=900&q=80"
+                  alt="Restaurant rebrand presentation with menus and packaging" />
+                <div class="portfolio-overlay"><span>Logos + Branding</span>
+                  <h3>Saffron Table Rebrand</h3>
+                </div>
+              </div>
+              <div class="portfolio-body">
+                <div class="portfolio-meta"><span><i class="bi bi-building"></i> Saffron Table</span><span><i
+                      class="bi bi-calendar3"></i> 2024</span></div>
+                <p>Rebuilt a restaurant brand with new logo directions, menu styling, packaging accents, and
+                  interior-ready visual language.</p>
+                <div class="portfolio-tags"><span>Rebrand</span><span>Menu Style</span><span>Packaging</span></div>
+                <button class="btn btn-outline-dark rounded-pill btn-sm portfolio-open" type="button">View
+                  Gallery</button>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-xl-4 portfolio-item reveal" data-category="branding social" data-year="2024"
+            data-keywords="startup launch visual kit social assets pitch deck brand system templates">
+            <article class="portfolio-card" data-project="pilot-edge-launch-kit"
+              data-image="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1200&auto=format&fit=crop"
+              data-title="Pilot Edge Launch Visual Kit"
+              data-description="Produced a startup launch kit including brand identity boards, social launch assets, and a clean presentation system for early traction."
+              data-category-label="Branding / Social Media" data-client="Pilot Edge"
+              data-tools="Figma, Illustrator, Photoshop" data-delivery="10 Days">
+              <div class="portfolio-media"><img
+                  src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=900&auto=format&fit=crop"
+                  alt="Startup launch visuals and digital presentation boards" />
+                <div class="portfolio-overlay"><span>Branding + Social</span>
+                  <h3>Pilot Edge Launch Kit</h3>
+                </div>
+              </div>
+              <div class="portfolio-body">
+                <div class="portfolio-meta"><span><i class="bi bi-building"></i> Pilot Edge</span><span><i
+                      class="bi bi-calendar3"></i> 2024</span></div>
+                <p>Produced a startup launch kit including brand identity boards, social launch assets, and a clean
+                  presentation system for early traction.</p>
+                <div class="portfolio-tags"><span>Launch Kit</span><span>Brand Deck</span><span>Social Assets</span>
+                </div><button class="btn btn-outline-dark rounded-pill btn-sm portfolio-open" type="button">View
+                  Gallery</button>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-xl-4 portfolio-item reveal" data-category="photo social" data-year="2024"
+            data-keywords="product ads ecommerce editing marketplace retouch shadows banners creatives">
+            <article class="portfolio-card" data-project="primecart-product-refresh"
+              data-image="https://images.unsplash.com/photo-1511556820780-d912e42b4980?auto=format&fit=crop&w=1200&q=80"
+              data-title="PrimeCart Product Ad Refresh"
+              data-description="Upgraded e-commerce product visuals for listings and paid ads with sharper lighting, cleanup, and conversion-focused compositions."
+              data-category-label="Photo Editing / Social Media" data-client="PrimeCart"
+              data-tools="Photoshop, Lightroom" data-delivery="6 Days">
+              <div class="portfolio-media"><img
+                  src="https://images.unsplash.com/photo-1511556820780-d912e42b4980?auto=format&fit=crop&w=900&q=80"
+                  alt="Product ad editing and marketplace campaign visuals" />
+                <div class="portfolio-overlay"><span>Photo + Social</span>
+                  <h3>PrimeCart Product Refresh</h3>
+                </div>
+              </div>
+              <div class="portfolio-body">
+                <div class="portfolio-meta"><span><i class="bi bi-building"></i> PrimeCart</span><span><i
+                      class="bi bi-calendar3"></i> 2024</span></div>
+                <p>Upgraded e-commerce product visuals for listings and paid ads with sharper lighting, cleanup, and
+                  conversion-focused compositions.</p>
+                <div class="portfolio-tags"><span>Product Ads</span><span>Retouch</span><span>Marketplace</span></div>
+                <button class="btn btn-outline-dark rounded-pill btn-sm portfolio-open" type="button">View
+                  Gallery</button>
+              </div>
+            </article>
+          </div>
+        </div>
+        <p class="portfolio-empty d-none" id="portfolioEmpty">No matching project found. Try another keyword or
+          category.</p>
+      </div>
+    </section>
+    <section id="certificates" class="section-space certificates-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-9 text-center reveal">
+            <p class="section-kicker">Certificates</p>
+            <h2 class="section-title">Certified Expertise in a Dynamic Showcase</h2>
+            <p class="section-text mx-auto">Browse verified certifications through an interactive stacked deck. Rotate
+              the top certificate, then open the full preview for details.</p>
+          </div>
+        </div>
+        <div class="row certificate-showcase-row align-items-center gy-5 gx-lg-5">
+          <div class="col-lg-5 reveal">
+            <article class="certificate-stack-copy">
+              <p class="certificate-stack-kicker mb-2">Certified Skills</p>
+              <h3 class="certificate-stack-title">Swipe the Front Card to Explore the Credential Stack</h3>
+              <p class="certificate-stack-text">Each certificate highlights trusted expertise across brand identity,
+                Adobe tools, digital design, print production, and creative strategy.</p>
+              <ul class="certificate-stack-notes mb-0">
+                <li>Drag left or right to rotate the visible deck</li>
+                <li>Click the front certificate to open the full preview</li>
+                <li>Use the controls below for quick browsing</li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-lg-7 reveal">
+            <div class="certificate-stack-shell"><span class="certificate-stack-orb orb-left"
+                aria-hidden="true"></span><span class="certificate-stack-orb orb-right" aria-hidden="true"></span>
+              <div class="certificate-stack-scene" id="certificateStackScene" aria-label="Swipeable certificate stack">
+                <article class="certificate-stack-card certificate-preview-trigger" role="button" tabindex="0"
+                  data-position="front" data-cert-title="Adobe Certified Professional: Visual Design"
+                  data-cert-issuer="Adobe / Certiport" data-cert-year="2025" data-cert-id="ACP-VD-2025-1172"
+                  data-cert-image="certificates/certificate-adobe-visual-design.svg"
+                  aria-label="Open Adobe Certified Professional Visual Design certificate preview">
+                  <figure class="certificate-stack-media mb-0"><img
+                      src="certificates/certificate-adobe-visual-design.svg"
+                      alt="Adobe Certified Professional Visual Design certificate preview" loading="lazy" /></figure>
+                  <div class="certificate-stack-body">
+                    <p class="certificate-stack-badge mb-2">Professional Certification</p>
+                    <h3>Adobe Certified Professional: Visual Design</h3>
+                    <p class="certificate-stack-meta mb-0">Adobe / Certiport � 2025</p>
+                  </div>
+                </article>
+                <article class="certificate-stack-card certificate-preview-trigger" role="button" tabindex="-1"
+                  data-position="middle" data-cert-title="Adobe Illustrator Certified Associate"
+                  data-cert-issuer="Adobe Creative Education" data-cert-year="2024" data-cert-id="AICA-2024-9824"
+                  data-cert-image="certificates/certificate-illustrator-associate.svg"
+                  aria-label="Open Adobe Illustrator Certified Associate certificate preview">
+                  <figure class="certificate-stack-media mb-0"><img
+                      src="certificates/certificate-illustrator-associate.svg"
+                      alt="Adobe Illustrator Certified Associate certificate preview" loading="lazy" /></figure>
+                  <div class="certificate-stack-body">
+                    <p class="certificate-stack-badge mb-2">Tool Specialization</p>
+                    <h3>Adobe Illustrator Certified Associate</h3>
+                    <p class="certificate-stack-meta mb-0">Adobe Creative Education � 2024</p>
+                  </div>
+                </article>
+                <article class="certificate-stack-card certificate-preview-trigger" role="button" tabindex="-1"
+                  data-position="back" data-cert-title="Brand Strategy & Identity Masterclass"
+                  data-cert-issuer="Creative Leadership Academy" data-cert-year="2024" data-cert-id="BSIM-2024-4157"
+                  data-cert-image="certificates/certificate-brand-strategy-masterclass.svg"
+                  aria-label="Open Brand Strategy and Identity Masterclass certificate preview">
+                  <figure class="certificate-stack-media mb-0"><img
+                      src="certificates/certificate-brand-strategy-masterclass.svg"
+                      alt="Brand Strategy and Identity Masterclass certificate preview" loading="lazy" /></figure>
+                  <div class="certificate-stack-body">
+                    <p class="certificate-stack-badge mb-2">Brand Leadership</p>
+                    <h3>Brand Strategy &amp; Identity Masterclass</h3>
+                    <p class="certificate-stack-meta mb-0">Creative Leadership Academy � 2024</p>
+                  </div>
+                </article>
+                <article class="certificate-stack-card certificate-preview-trigger" role="button" tabindex="-1"
+                  data-position="hidden" data-cert-title="UI Graphics & Web Visual Design Certification"
+                  data-cert-issuer="Interaction Design Institute" data-cert-year="2023" data-cert-id="UIWVD-2023-5508"
+                  data-cert-image="certificates/certificate-ui-web-visual.svg"
+                  aria-label="Open UI Graphics and Web Visual Design certificate preview">
+                  <figure class="certificate-stack-media mb-0"><img src="certificates/certificate-ui-web-visual.svg"
+                      alt="UI Graphics and Web Visual Design certificate preview" loading="lazy" /></figure>
+                  <div class="certificate-stack-body">
+                    <p class="certificate-stack-badge mb-2">Digital Design</p>
+                    <h3>UI Graphics &amp; Web Visual Design</h3>
+                    <p class="certificate-stack-meta mb-0">Interaction Design Institute � 2023</p>
+                  </div>
+                </article>
+                <article class="certificate-stack-card certificate-preview-trigger" role="button" tabindex="-1"
+                  data-position="hidden" data-cert-title="Print Production & Packaging Specialist"
+                  data-cert-issuer="Design Production Council" data-cert-year="2022" data-cert-id="PPS-2022-3011"
+                  data-cert-image="certificates/certificate-print-packaging.svg"
+                  aria-label="Open Print Production and Packaging Specialist certificate preview">
+                  <figure class="certificate-stack-media mb-0"><img src="certificates/certificate-print-packaging.svg"
+                      alt="Print Production and Packaging Specialist certificate preview" loading="lazy" /></figure>
+                  <div class="certificate-stack-body">
+                    <p class="certificate-stack-badge mb-2">Print &amp; Packaging</p>
+                    <h3>Print Production &amp; Packaging Specialist</h3>
+                    <p class="certificate-stack-meta mb-0">Design Production Council � 2022</p>
+                  </div>
+                </article>
+                <article class="certificate-stack-card certificate-preview-trigger" role="button" tabindex="-1"
+                  data-position="hidden" data-cert-title="Social Media Creative Strategy Certification"
+                  data-cert-issuer="Digital Marketing Academy" data-cert-year="2024" data-cert-id="SMCS-2024-6402"
+                  data-cert-image="certificates/certificate-social-creative.svg"
+                  aria-label="Open Social Media Creative Strategy certificate preview">
+                  <figure class="certificate-stack-media mb-0"><img src="certificates/certificate-social-creative.svg"
+                      alt="Social Media Creative Strategy certificate preview" loading="lazy" /></figure>
+                  <div class="certificate-stack-body">
+                    <p class="certificate-stack-badge mb-2">Campaign Strategy</p>
+                    <h3>Social Media Creative Strategy</h3>
+                    <p class="certificate-stack-meta mb-0">Digital Marketing Academy � 2024</p>
+                  </div>
+                </article>
+              </div>
+              <div class="certificate-stack-controls"><button class="certificate-stack-btn" id="certificateStackPrev"
+                  type="button" aria-label="Show previous certificate"><i class="bi bi-arrow-left"
+                    aria-hidden="true"></i>Previous
+                </button>
+                <p class="certificate-stack-hint mb-0">Drag the front card or rotate with the controls.</p><button
+                  class="certificate-stack-btn certificate-stack-btn-primary" id="certificateStackNext" type="button"
+                  aria-label="Show next certificate">
+                  Next<i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="workflow" class="section-space workflow-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center reveal">
+            <p class="section-kicker">Workflow</p>
+            <h2 class="section-title">Workflow Procedure</h2>
+            <p class="section-text mx-auto">Watch the live execution flow I follow for every client project, from first
+              brief to final handover.</p>
+          </div>
+        </div>
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-5 reveal">
+            <article class="workflow-copy-card">
+              <h3>How I Execute Every Project</h3>
+              <p>A clear step-by-step system keeps the design process smooth, transparent, and result-focused.</p>
+              <ol class="workflow-points mb-0">
+                <li>Brief analysis and requirement mapping</li>
+                <li>Creative direction, references, and concept setup</li>
+                <li>Design production with revision rounds</li>
+                <li>Final delivery package and export handover</li>
+              </ol>
+            </article>
+          </div>
+          <div class="col-lg-7 reveal">
+            <div class="workflow-video-shell"><span class="workflow-video-glow" aria-hidden="true"></span>
+              <div class="workflow-video-head">
+                <p class="workflow-video-label mb-0">Workflow Demo</p><span class="workflow-video-status"><i
+                    class="bi bi-circle-fill" aria-hidden="true"></i>Live Preview</span>
+              </div>
+              <div class="workflow-video-frame"><iframe class="workflow-video-player"
+                  src="https://www.youtube.com/embed/wwo6Gdx3x7s?=1&mute=1&loop=1&playlist=wwo6Gdx3x7s&rel=0"
+                  title="Workflow Procedure Video" loading="lazy"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="section-space testimonials-section">
+      <div class="container">
+        <div class="row align-items-end g-4 mb-5">
+          <div class="col-lg-7 reveal">
+            <p class="section-kicker">Testimonials</p>
+            <h2 class="section-title">Client Feedback That Reflects Real Design Results</h2>
+            <p class="section-text mb-0">Brand identity, social campaigns, and production-ready graphics delivered with
+              clear communication and dependable turnaround.</p>
+          </div>
+          <div class="col-lg-5 reveal">
+            <div class="testimonial-mini-stats">
+              <div class="testimonial-mini-stat"><strong>5 Star</strong><span>review standard</span></div>
+              <div class="testimonial-mini-stat"><strong>24h</strong><span>reply window</span></div>
+              <div class="testimonial-mini-stat"><strong>Web + Print</strong><span>ready delivery</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-4 reveal">
+            <article class="testimonials-overview h-100">
+              <p class="testimonials-overview-kicker">Why clients return</p>
+              <h3>Creative support built for brands that need premium visuals without slow execution.</h3>
+              <p>Each project stays practical and polished, from concept approval to final export files for campaigns,
+                printing, and digital launch.</p>
+              <ul class="testimonial-overview-list list-unstyled mb-0">
+                <li><i class="bi bi-check2-circle" aria-hidden="true"></i><span>Premium-first direction for logo
+                    systems, campaigns, and marketing assets</span></li>
+                <li><i class="bi bi-check2-circle" aria-hidden="true"></i><span>Clear revision flow with fast feedback
+                    handling and less back-and-forth</span></li>
+                <li><i class="bi bi-check2-circle" aria-hidden="true"></i><span>Production-ready delivery for social
+                    media, presentations, and print outputs</span></li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-lg-8 reveal">
+            <div id="testimonialCarousel" class="carousel slide carousel-fade testimonials-carousel"
+              data-bs-ride="carousel">
+              <div class="testimonial-stage">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <article class="testimonial-card">
+                      <div class="testimonial-card-head"><span class="testimonial-badge">Brand Identity</span>
+                        <div class="stars" aria-label="5 star rating">?????</div>
+                      </div><span class="testimonial-quote-mark" aria-hidden="true">�</span>
+                      <p class="testimonial-text">Our rebrand looked world-class. The logo system, launch graphics, and
+                        packaging visuals immediately elevated how customers perceived the brand.</p>
+                      <div class="testimonial-footer">
+                        <div class="testimonial-author"><span class="testimonial-avatar" aria-hidden="true">SA</span>
+                          <div>
+                            <h3 class="testimonial-name">Sarah Ahmed</h3>
+                            <p class="testimonial-role">Marketing Director</p>
+                            <p class="testimonial-company">Nova Retail</p>
+                          </div>
+                        </div>
+                        <div class="testimonial-meta">
+                          <div class="testimonial-meta-row"><span class="testimonial-meta-label">Project</span><span
+                              class="testimonial-meta-value">Retail rebrand system</span></div>
+                          <div class="testimonial-meta-row"><span class="testimonial-meta-label">Focus</span><span
+                              class="testimonial-meta-value">Logo, packaging, campaign graphics</span></div>
+                          <div class="testimonial-meta-row"><span class="testimonial-meta-label">Result</span><span
+                              class="testimonial-meta-value">Stronger premium positioning</span></div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="carousel-item">
+                    <article class="testimonial-card">
+                      <div class="testimonial-card-head"><span class="testimonial-badge">Print + Retouching</span>
+                        <div class="stars" aria-label="5 star rating">?????</div>
+                      </div><span class="testimonial-quote-mark" aria-hidden="true">�</span>
+                      <p class="testimonial-text">Exceptional attention to detail in Photoshop editing and print
+                        preparation. Everything arrived fast, clean, and fully ready for production without correction
+                        rounds.</p>
+                      <div class="testimonial-footer">
+                        <div class="testimonial-author"><span class="testimonial-avatar" aria-hidden="true">DM</span>
+                          <div>
+                            <h3 class="testimonial-name">David Miller</h3>
+                            <p class="testimonial-role">Founder</p>
+                            <p class="testimonial-company">Ember Studio</p>
+                          </div>
+                        </div>
+                        <div class="testimonial-meta">
+                          <div class="testimonial-meta-row"><span class="testimonial-meta-label">Project</span><span
+                              class="testimonial-meta-value">Print collateral and retouching pack</span></div>
+                          <div class="testimonial-meta-row"><span class="testimonial-meta-label">Focus</span><span
+                              class="testimonial-meta-value">Photo cleanup, brochure prep, export setup</span></div>
+                          <div class="testimonial-meta-row"><span class="testimonial-meta-label">Result</span><span
+                              class="testimonial-meta-value">Fast production-ready output</span></div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="carousel-item">
+                    <article class="testimonial-card">
+                      <div class="testimonial-card-head"><span class="testimonial-badge">Social Campaigns</span>
+                        <div class="stars" aria-label="5 star rating">?????</div>
+                      </div><span class="testimonial-quote-mark" aria-hidden="true">�</span>
+                      <p class="testimonial-text">The social media visuals transformed our engagement metrics. The
+                        direction felt consistent, premium, and much more aligned with the beauty audience we wanted to
+                        reach.</p>
+                      <div class="testimonial-footer">
+                        <div class="testimonial-author"><span class="testimonial-avatar" aria-hidden="true">HQ</span>
+                          <div>
+                            <h3 class="testimonial-name">Hina Qureshi</h3>
+                            <p class="testimonial-role">Brand Manager</p>
+                            <p class="testimonial-company">Elara Beauty</p>
+                          </div>
+                        </div>
+                        <div class="testimonial-meta">
+                          <div class="testimonial-meta-row"><span class="testimonial-meta-label">Project</span><span
+                              class="testimonial-meta-value">Social campaign design system</span></div>
+                          <div class="testimonial-meta-row"><span class="testimonial-meta-label">Focus</span><span
+                              class="testimonial-meta-value">Post carousels, ad creatives, reel covers</span></div>
+                          <div class="testimonial-meta-row"><span class="testimonial-meta-label">Result</span><span
+                              class="testimonial-meta-value">Better engagement and consistency</span></div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="testimonial-controls"><button class="testimonial-nav" type="button"
+                    data-bs-target="#testimonialCarousel" data-bs-slide="prev" aria-label="Previous testimonial"><i
+                      class="bi bi-arrow-left" aria-hidden="true"></i></button>
+                  <div class="carousel-indicators testimonial-indicators"><button type="button"
+                      data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                      aria-label="Go to testimonial 1"></button><button type="button"
+                      data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                      aria-label="Go to testimonial 2"></button><button type="button"
+                      data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
+                      aria-label="Go to testimonial 3"></button></div><button class="testimonial-nav" type="button"
+                    data-bs-target="#testimonialCarousel" data-bs-slide="next" aria-label="Next testimonial"><i
+                      class="bi bi-arrow-right" aria-hidden="true"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section-space contact-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center reveal">
+            <p class="section-kicker">Contact</p>
+            <h2 class="section-title">Let's Start Your Next Design Project</h2>
+            <p class="section-text mx-auto">Share your requirements and I will get back with a clear design plan and
+              timeline.</p>
+          </div>
+        </div>
+        <div class="row g-5 align-items-stretch">
+          <div class="col-lg-6 reveal order-2 order-lg-1 d-flex">
+            <article class="contact-hire-panel h-100 w-100" aria-label="Direct hiring contact options">
+              <p class="contact-hire-kicker mb-2">Hire Me Directly</p>
+              <h3 class="contact-hire-title">Get In Touch Instantly</h3>
+              <p class="contact-hire-text mb-0">
+                Fastest way to start your project: send your requirements on WhatsApp or email me directly.
+              </p>
+              <div class="hire-channel-list mt-4"><a class="hire-channel-btn hire-whatsapp"
+                  href="https://wa.me/923106565892?text=Hi%20Mr.%20Usman,%20I%20want%20to%20hire%20you%20for%20a%20design%20project."
+                  target="_blank" rel="noopener noreferrer" aria-label="Contact on WhatsApp"><span
+                    class="hire-channel-copy"><i class="bi bi-whatsapp"
+                      aria-hidden="true"></i><span><strong>WhatsApp</strong><small>+92 (310)
+                        6565-892</small></span></span><i class="bi bi-arrow-up-right-circle-fill"
+                    aria-hidden="true"></i></a><a class="hire-channel-btn hire-email"
+                  href="mailto:usmanfarooq9293@gmail.com?subject=Hiring%20Inquiry%20-%20Design%20Project&body=Hi%20Mr.%20Usman,%0D%0A%0D%0AI%20want%20to%20hire%20you%20for%20a%20project.%20Please%20share%20next%20steps.%0D%0A%0D%0AName:%0D%0ACompany:%0D%0AService:%0D%0ABudget:%0D%0ATimeline:%0D%0A"
+                  aria-label="Send email inquiry"><span class="hire-channel-copy"><i class="bi bi-envelope-paper-fill"
+                      aria-hidden="true"></i><span><strong>Email</strong><small>usmanfarooq9293@gmail.com</small></span></span><i
+                    class="bi bi-arrow-up-right-circle-fill" aria-hidden="true"></i></a><a
+                  class="hire-channel-btn hire-facebook" href="https://www.facebook.com/Mr.UsmanJutt91" target="_blank"
+                  rel="noopener noreferrer" aria-label="Contact on Facebook"><span class="hire-channel-copy"><i
+                      class="bi bi-facebook" aria-hidden="true"></i><span><strong>Facebook</strong><small>Message on
+                        Facebook</small></span></span><i class="bi bi-arrow-up-right-circle-fill"
+                    aria-hidden="true"></i></a><a class="hire-channel-btn hire-instagram"
+                  href="https://www.instagram.com/usmanjuttttt/" target="_blank" rel="noopener noreferrer"
+                  aria-label="Contact on Instagram"><span class="hire-channel-copy"><i class="bi bi-instagram"
+                      aria-hidden="true"></i><span><strong>Instagram</strong><small>DM on
+                        Instagram</small></span></span><i class="bi bi-arrow-up-right-circle-fill"
+                    aria-hidden="true"></i></a></div>
+              <ul class="hire-benefits mt-4 mb-0">
+                <li><i class="bi bi-check2-circle" aria-hidden="true"></i>Response within 24 hours</li>
+                <li><i class="bi bi-check2-circle" aria-hidden="true"></i>Clear pricing and delivery timeline</li>
+                <li><i class="bi bi-check2-circle" aria-hidden="true"></i>Project discussion in English / Urdu</li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-lg-6 reveal order-1 order-lg-2">
+            <article class="map-card h-100" aria-label="Studio map and quick directions">
+              <div class="map-card-head">
+                <div>
+                  <p class="map-card-kicker mb-1">Studio Location</p>
+                  <h3 class="map-card-title mb-0">Multan, Pakistan</h3>
+                </div><span class="map-live-pill"><i class="bi bi-circle-fill" aria-hidden="true"></i>Available</span>
+              </div>
+              <div class="map-frame-wrap"><iframe title="Google map location"
+                  src="https://www.google.com/maps?q=Multan,+Pakistan&output=embed" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+              <div class="map-card-actions"><a class="map-action-btn" href="https://maps.google.com/?q=Multan,+Pakistan"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open map in Google Maps"><i class="bi bi-map"
+                    aria-hidden="true"></i>
+                  Open in Maps
+                </a><a class="map-action-btn map-action-direction"
+                  href="https://www.google.com/maps/dir/?api=1&destination=Multan,+Pakistan" target="_blank"
+                  rel="noopener noreferrer" aria-label="Get directions to Multan Pakistan"><i
+                    class="bi bi-sign-turn-right-fill" aria-hidden="true"></i>
+                  Get Directions
+                </a></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-shell">
+        <div class="footer-simple"><a class="brand-logo brand-logo-footer footer-brand" href="#home"
+            aria-label="mr.usman signature logo"><img class="brand-signature" src="signature-usman.png" alt=""
+              loading="lazy" decoding="async"></a>
+          <p class="footer-simple-text mb-0">Premium graphic design for brands that want a polished visual presence.</p>
+          <p class="copyright mb-0">&copy; <span id="currentYear"></span> mr.usman. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true"
+    data-lenis-prevent>
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content border-0 cv-modal-content">
+        <div class="modal-header border-0 pb-2">
+          <h3 class="modal-title fs-5" id="cvModalLabel">Mr. Usman - Graphic Designer CV</h3>
+          <div class="cv-modal-actions d-flex align-items-center gap-2"><a href="Mr-Usman-CV.pdf" type="application/pdf"
+              download="Mr-Usman-CV.pdf" class="btn btn-cv-download btn-sm rounded-pill px-3"><i
+                class="bi bi-file-earmark-pdf me-1" aria-hidden="true"></i>Download PDF CV
+            </a><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+        </div>
+        <div class="modal-body pt-0 cv-modal-body">
+          <div class="cv-layout">
+            <figure class="cv-preview-wrap"><img src="cv-preview.png" alt="Preview image of Mr. Usman CV"
+                class="cv-preview-img" loading="lazy" /></figure>
+            <article class="cv-sheet">
+              <header class="cv-head">
+                <h4 class="mb-1">Mr. Usman</h4>
+                <p class="mb-1">Senior Graphic Designer & Visual Branding Specialist</p>
+                <p class="mb-0">mr@usman.com | +92 (310) 6565-892 | Multan</p>
+              </header>
+              <section class="cv-block">
+                <h5>Professional Summary</h5>
+                <p>7+ years of experience in branding, social media, and print design with Photoshop + Illustrator
+                  expertise.</p>
+              </section>
+              <section class="cv-block">
+                <h5>Core Skills</h5>
+                <div class="cv-tags"><span>Logo Design</span><span>Brand
+                    Identity</span><span>Photoshop</span><span>Illustrator</span><span>Social Design</span><span>Print
+                    Design</span><span>Retouching</span><span>UI Graphics</span></div>
+              </section>
+              <section class="cv-block">
+                <h5>Experience Highlights</h5>
+                <ul class="cv-list">
+                  <li>120+ projects delivered for startups and businesses.</li>
+                  <li>Built complete logo and brand guideline systems.</li>
+                  <li>Created campaign visuals for social and print media.</li>
+                </ul>
+              </section>
+              <section class="cv-block">
+                <h5>Software</h5>
+                <p>Photoshop, Illustrator, InDesign, After Effects, Lightroom, Figma, Canva, CorelDRAW.</p>
+              </section>
+              <section class="cv-block mb-0">
+                <h5>Services</h5>
+                <p class="mb-0">Logo & Brand Identity, Photoshop Editing, Vector Art, Social Media, Print, Web/UI
+                  Graphics.</p>
+              </section>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="serviceProcessModal" tabindex="-1" aria-labelledby="serviceProcessModalLabel"
+    aria-hidden="true" data-lenis-prevent>
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content border-0">
+        <div class="modal-header border-0 pb-2">
+          <h3 class="modal-title fs-5" id="serviceProcessModalLabel">Service Process</h3><button type="button"
+            class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-0">
+          <div class="service-modal-layout">
+            <figure class="service-sketch-panel"><img id="serviceProcessSketch" class="service-sketch-image"
+                src="service-process-sketches/logo-brand-identity-sketch.svg"
+                alt="Hand-drawn step-by-step process sketch for Logo and Brand Identity" loading="lazy" />
+              <figcaption id="serviceSketchCaption" class="service-sketch-caption">Hand-drawn paper workflow map
+              </figcaption>
+            </figure>
+            <div class="service-process-content">
+              <p id="serviceProcessSubtitle" class="service-process-subtitle">A complete execution roadmap will appear
+                here.</p>
+              <section class="service-process-panel">
+                <h4>A to Z Execution Process</h4>
+                <ol id="serviceProcessList" class="service-process-list"></ol>
+              </section>
+              <aside class="service-deliverables-panel">
+                <h4>Final Deliverables</h4>
+                <div id="serviceDeliverables" class="service-deliverables"></div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true"
+    data-lenis-prevent>
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content border-0 certificate-modal-content">
+        <div class="modal-header border-0 pb-2">
+          <h3 class="modal-title fs-5" id="certificateModalLabel">Certificate Preview</h3><button type="button"
+            class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-0">
+          <div class="certificate-modal-layout">
+            <figure class="certificate-modal-figure mb-0"><img id="certificateModalImage" src=""
+                alt="Certificate preview" loading="lazy" /></figure>
+            <aside class="certificate-modal-meta">
+              <p class="certificate-modal-tag mb-2">Verified Achievement</p>
+              <h4 id="certificateModalTitle" class="mb-2">Certificate Title</h4>
+              <ul class="certificate-modal-list mb-0">
+                <li><span>Issuer</span><strong id="certificateModalIssuer">-</strong></li>
+                <li><span>Year</span><strong id="certificateModalYear">-</strong></li>
+                <li><span>ID</span><strong id="certificateModalId">-</strong></li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true"
+    data-lenis-prevent>
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content border-0">
+        <div class="modal-header border-0">
+          <h3 class="modal-title fs-5" id="portfolioModalLabel">Project Preview</h3><button type="button"
+            class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-0">
+          <div class="row g-4 portfolio-modal-layout">
+            <div class="col-lg-7">
+              <div class="portfolio-modal-gallery">
+                <div class="portfolio-modal-stage" id="portfolioModalStage"><img id="modalImage" src=""
+                    alt="Portfolio project preview" class="portfolio-modal-image" /><button id="portfolioPrevSlide"
+                    class="portfolio-gallery-arrow portfolio-gallery-arrow-prev" type="button"
+                    aria-label="Show previous project image"><i class="bi bi-chevron-left"
+                      aria-hidden="true"></i></button><button id="portfolioNextSlide"
+                    class="portfolio-gallery-arrow portfolio-gallery-arrow-next" type="button"
+                    aria-label="Show next project image"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+                  <div class="portfolio-modal-counter" id="modalSlideCounter">1 / 5</div>
+                </div>
+                <div class="portfolio-modal-dots" id="portfolioModalDots" aria-label="Project gallery navigation"></div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <aside class="portfolio-modal-info" id="portfolioModalInfo" aria-live="polite">
+                <p class="portfolio-modal-kicker mb-2">Slide Details</p>
+                <p class="portfolio-modal-category" id="modalCategory">Category</p>
+                <h4 class="portfolio-modal-slide-title" id="modalSlideTitle">Slide title</h4>
+                <p class="portfolio-modal-description" id="modalDescription">Detailed slide information will appear
+                  here.</p>
+                <ul class="portfolio-modal-list">
+                  <li><span>Client</span><strong id="modalClient">-</strong></li>
+                  <li><span>Tools</span><strong id="modalTools">-</strong></li>
+                  <li><span>Timeline</span><strong id="modalTimeline">-</strong></li>
+                  <li><span>Gallery</span><strong id="modalSlideMeta">5 Visuals</strong></li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
